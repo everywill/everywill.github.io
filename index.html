@@ -1,331 +1,169 @@
-<!doctype html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <meta charset="utf-8">
   
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
-
-
-
-
-
-
-<meta property="og:type" content="website">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>everywill</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="everywill">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="everywill">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="everywill">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+  
+    <link rel="alternative" href="/atom.xml" title="everywill" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" type="text/css" href="/./main.2d7529.css">
+  <style type="text/css">
+  
+    #container.show {
+      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
     }
-  };
-</script>
+  </style>
+  
 
+  
 
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
-
-
-
-
-  <title> everywill </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+      
+<div class="overlay" style="background: #4d4d4d"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img src="https://img.yzcdn.cn/upload_files/2016/09/20/147435731596357149.jpg?imageView/1/w/120/h/120" class="js-avatar">
+		</a>
+		<hgroup>
+		  <h1 class="header-author"><a href="/">everywill</a></h1>
+		</hgroup>
+		
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">everywill</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-    
-      <p class="site-subtitle"></p>
-    
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/archives">所有文章</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+    		
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/everywill" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/u/2933702151" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="mail" target="_blank" href="mailto:everywillatchina@gmail.com" title="mail"><i class="icon-mail"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/chen-pan-32" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
+    </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      
+<nav id="mobile-nav">
+  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+	<div class="btnctn js-mobile-btnctn">
+  		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
+	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="https://img.yzcdn.cn/upload_files/2016/09/20/147435731596357149.jpg?imageView/1/w/120/h/120" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author js-header-author">everywill</h1>
+			</hgroup>
+			
+			
+			
+				
+			
+				
+			
+			
+			
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/everywill" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/2933702151" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="mail" target="_blank" href="mailto:everywillatchina@gmail.com" title="mail"><i class="icon-mail"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/chen-pan-32" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
 
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Startseite
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archiv
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
+			<nav class="header-menu js-header-menu">
+				<ul style="width: 50%">
+				
+				
+					<li style="width: 50%"><a href="/">主页</a></li>
+		        
+					<li style="width: 50%"><a href="/archives">所有文章</a></li>
+		        
+				</ul>
+			</nav>
+		</header>				
+	</div>
+	<div class="mobile-mask" style="display:none" q-show="isShow"></div>
 </nav>
 
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
             
-  <section id="posts" class="posts-expand">
+  
+    <article id="post-CSS2-1-SPEC-翻译及笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-      
-
+      <header class="article-header">
+        
   
-
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/12/CSS2-1-SPEC-翻译及笔记/">CSS2.1 SPEC 翻译及笔记</a>
+    </h1>
   
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/12/CSS2-1-SPEC-翻译及笔记/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="everywill">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="everywill">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="everywill" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
 
         
+        <a href="/2017/02/12/CSS2-1-SPEC-翻译及笔记/" class="archive-article-date">
+  	<time datetime="2017-02-12T13:18:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-12</time>
+</a>
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/02/12/CSS2-1-SPEC-翻译及笔记/" itemprop="url">
-                  CSS2.1 SPEC 翻译及笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-12T21:18:06+08:00">
-                2017-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
       </header>
     
-
-
-    <div class="post-body" itemprop="articleBody">
-
+    <div class="article-entry" itemprop="articleBody">
       
-      
-
-      
-        
-          
-            <blockquote>
+        <blockquote>
 <p>对css2.1 spec翻译理解的笔记整理</p>
 </blockquote>
 <h1 id="语法与基本数据类型"><a href="#语法与基本数据类型" class="headerlink" title="语法与基本数据类型"></a>语法与基本数据类型</h1><h3 id="值"><a href="#值" class="headerlink" title="值"></a>值</h3><ol>
@@ -333,725 +171,187 @@
 <li>em相对字体大小。</li>
 <li>子元素一般继承computed value（除了数值）。</li>
 </ol>
-<h1 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h1><h3 id="伪元素和伪类选择器"><a href="#伪元素和伪类选择器" class="headerlink" title="伪元素和伪类选择器"></a>伪元素和伪类选择器</h3><ol>
-<li>匿名盒不在文档树中，计算子集时不加入考虑。</li>
-<li>:first-line伪元素只能出现在block container element，可能出现在相同flow（没有被定位且不float）的block-level后代中，但不能在table-cell或inline-block的后代中。</li>
-<li>:first-letter应用于block container element，可应用于同一个flow中含有文本的后代，但不能在table-cell或inline-block的后代中（必须出现在first formatted line），计算时包括:before和:after在内的文本。</li>
-</ol>
-<h1 id="属性赋值，层叠和继承"><a href="#属性赋值，层叠和继承" class="headerlink" title="属性赋值，层叠和继承"></a>属性赋值，层叠和继承</h1><h3 id="specified-computed-and-actual-values"><a href="#specified-computed-and-actual-values" class="headerlink" title="specified, computed and actual values"></a>specified, computed and actual values</h3><ol>
-<li>specified value指定的先后顺序：如果层叠产生一个值，就使用它；否则，如果属性是继承的并且元素不是文档的根，使用父元素的computed value；否则使用初始值。</li>
-<li>computed value和used value都做绝对化的工作，computed value计算时不需要渲染文档， used value计算时需要文档已布局。</li>
-<li>actual value针对客户端环境做近似。</li>
-</ol>
-<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><ol>
-<li>当出现继承时，元素继承computed value；父元素的computed value同时成为子元素的specified value和computed value。（可穿过匿名盒继承）。</li>
-<li>根元素的继承为继承自身initial value。</li>
-</ol>
-<h3 id="层叠"><a href="#层叠" class="headerlink" title="层叠"></a>层叠</h3><ol>
-<li>重要性（升序）：user agent声明 &lt; user normal声明 &lt; author normal声明 &lt; author important声明 &lt; user important声明；重要性相同则根据选择器特殊性。</li>
-</ol>
-<h1 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h1><h3 id="box-dimensions"><a href="#box-dimensions" class="headerlink" title="box dimensions"></a>box dimensions</h3><ol>
-<li>content, padding, border, margin。</li>
-<li><strong>margin</strong>：背景永远是transparent；non-repalced inline的元素竖直margin不起效；若指定百分比，参照containing block的宽度计算；computed value是指定的百分比或绝对长度；应用于除了除了table-caption, table, inline-table以外的table dispaly的所有元素。</li>
-<li><strong>collapsing margins（合并margin）</strong>：根元素(html)的margin不参与合并；水平margin不合并；如果一个有clearance的元素的top和bottom margin相邻，它的margin会与紧跟的兄弟的相邻margin合并，但生成的margin不会与父级的bottom margin合并。</li>
-<li><strong>两个margin相邻的条件</strong>：都属于in-flow的block-level box，在同一个bfc中；没有line box, clearance, padding和border把它们隔开；来自于下列某对：一个盒的top margin和它的第一个in-flow子级的top margin；一个盒的bottom margin和它的下一个in-flow的兄弟的top margin；最后一个in-flow的子级和它父级的bottom margin，如果父级的高度computed value为’auto’；一个盒的top和bottom margin，如果该盒没有建立一个新的bfc并且min-height的computed value为0，height的computed value为0或auto，并且没有in-flow子级。</li>
-<li><strong>padding</strong>：若指定百分比，参照containing block的宽度计算；应用于除table-row-group, table-header-group, table-footer-group, table-row, table-column-group和table-column外的所有元素。</li>
-<li><strong>border</strong>：当不指定border-color时，取color的值；当不指定border-style时，初始值为none将不显示边框。</li>
-</ol>
-<h1 id="可视化格式模型"><a href="#可视化格式模型" class="headerlink" title="可视化格式模型"></a>可视化格式模型</h1><h3 id="block-level-element、block-level-box"><a href="#block-level-element、block-level-box" class="headerlink" title="block-level element、block-level box"></a>block-level element、block-level box</h3><ol>
-<li><strong>block-level element</strong>(display: block, table, list-item).</li>
-<li><strong>block-level box</strong>(由block-level element生成)， 参与BFC。</li>
-<li><strong>block container box</strong>(除了table和replaced element的 block-level box，但包括non-replaced的 inline-block和table-cell), 只能包含block-level box或者inline-level box。</li>
-<li>同时为block-level box和block container box的称为block box。</li>
-<li>block container内如果有一个block-level box，则强制它只含有block-level-box。</li>
-<li>anonymous block box：（为了fomatting更加方便）如果一个block container包含一个block-level box, 则强制它只包含block-level box；anonymous block box的可继承属性继承自包裹它的non-anonymous box，不可继承属性取initial value；当处理百分比时，anonymous block box讲被忽略，用最近的non-anonymous祖先box来代替。</li>
-<li>当inline box包含in-flow的block-level box, 它和它inline祖先将在这一行被分割成两个并被包在anonymous block box。</li>
-</ol>
-<h3 id="inline-level-element-inline-level-box"><a href="#inline-level-element-inline-level-box" class="headerlink" title="inline-level element, inline-level box"></a>inline-level element, inline-level box</h3><ol>
-<li><strong>inline-level element</strong>(display: inine, inline-table, inline-block)。</li>
-<li><strong>inline-leve box</strong>(由inline-level element生成，参与IFC)。</li>
-<li><strong>inline-box</strong>: 特殊的inline-level box,其内容参与它containing IFC(需同时具备non-replaced和display:inline)。</li>
-<li><strong>atomic inline-level box</strong>(replaced inline-level, inline-block, inline-table):<br>作为单一的opaque box参与IFC。</li>
-<li>anonymous inline box(同样是block container内): 从其block parent box继承可继承属性，不可继承属性取initial value。</li>
-</ol>
-<h3 id="display"><a href="#display" class="headerlink" title="display"></a>display</h3><ol>
-<li>initial value为inline, 但UA默认样式表有重写。</li>
-<li>block：让元素产生一个block box。</li>
-<li>inline-block: 让元素生成一个inline-level block container。内部格式化成一个block box, 本身格式化成atomic inline-level box.</li>
-<li>inline: 让元素生成一个或多个inline box。</li>
-<li>list-item：让元素生成一个pricipal block box和一个marker box(block-level box都是pricipal，除了anonymous)。</li>
-<li>none：不生成box。</li>
-</ol>
-<h3 id="position-schemes-3种定位模式"><a href="#position-schemes-3种定位模式" class="headerlink" title="position schemes(3种定位模式)"></a>position schemes(3种定位模式)</h3><ol>
-<li><strong>normal flow</strong>: 包括block-level box的block formatting，inline-level box的inline formatting及它们的相对定位。</li>
-<li><strong>float</strong>: 先根据normal flow布局，然后抽出尽可能的左移或者右移，其他内容沿着box float的一侧排列。</li>
-<li><strong>ablosule position</strong>: 从normal flow中全部移走，根据containing block确定位置。</li>
-<li>如果一个元素是浮动的，绝对定位的或者是根元素，则它是out of flow；否则为in-flow。一个元素的flow包括它自身及所有以它为最近out of flow祖先元素的元素。</li>
-</ol>
-<h3 id="position"><a href="#position" class="headerlink" title="position"></a>position</h3><ol>
-<li><strong>static</strong>: 根据normal flow 布局。</li>
-<li><strong>relative</strong>: 在table-row-group, table-header-group, table-footer-group, table-row, table-column-group, table-cell和table-caption上没有定义。</li>
-<li><strong>absolute</strong>: 位置（可能包括size）由top, right, bottom, left根据containing block决定。</li>
-<li><strong>fixed</strong>: 同上根据absolute model计算position。</li>
-</ol>
-<h3 id="top-right-bottom-left"><a href="#top-right-bottom-left" class="headerlink" title="top, right, bottom, left"></a>top, right, bottom, left</h3><ol>
-<li>对于绝对定位，定义了margin edge到containing block edge的距离；对于相对定位，定义到normal flow中位置的距离。</li>
-<li>百分比参照containing block的宽度或高度。</li>
-<li><strong>auto</strong></li>
-</ol>
-<h3 id="normal-flow"><a href="#normal-flow" class="headerlink" title="normal flow"></a>normal flow</h3><ol>
-<li>在normal flow中，block-level box参与BFC，inline-level box参与IFC。</li>
-<li>BFC: 浮动，绝对定位，不是block box的block container（如inline-blocks, table-cells, table-caption）以及overflow属性不为visible将为其内容建立新的BFC。</li>
-<li>IFC: 包含来及同一行的box的矩形区域成为line box；line box的宽度由包含块和浮动决定，line box的高度由line-hight计算给出；宽度有多余时对齐参照text-align，如果是justify会对inline box中的空格和字间距进行拉伸（不包括inline-table和inline-block）。若inline box的宽度超过了line box，如果不能分割就overflow，如果可以分割，margin, border, padding在分割处不可见，<strong>在同一lline box内，inline box也可能进行分割</strong>。</li>
-<li>没有文本、保留空白符（preserved white space）、margin，padding或者border非0的内联元素、其它流内内容（例如，图片，inline block或者inline table），并且不以保留换行符（preserved newline）结束的行盒必须被当作一个0高度的行盒，为了确定它里面所有元素的位置，而其它时候（for any other purpose）必须当它不存在。</li>
-</ol>
-<h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a>相对定位</h3><ol>
-<li>可能在根据normal flow或者float排列后的偏移，会引起overflow: auto和scroll的变化。</li>
-<li><strong>保留在normal flow时的换行和空格</strong></li>
-<li>left在ltr时战胜right，在rtl时相反。都为auto时，used value为0；bottom和top都指定时，bottom将被无视。</li>
-</ol>
-<h3 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h3><ol>
-<li>浮动的box向左或者向右移动时将直到自己的outer edge达到containing block的edge或者别的浮动box的outer edge; 如果存在line box，则与current line box top对齐。</li>
-<li>current和subsequent line box将为给float的margin box腾出空间而缩短（如果缩短到不能容纳任何内容，该line box将会向下移动）0 height或者负hight的浮动盒不影响line box的宽度。</li>
-<li>table, block level replaced元素以及在nomal flow中建立了新BFC的元素的border box不能与和元素在同一个BFC中的任何浮动的margin box重叠；如果必须的话，将此元素放在所有之前float的下方来clear此元素，但如果空间足够，可以放置与浮动相邻。</li>
-<li>浮动的内容会发生堆叠，像生成了新的stacking context，所有positioned和实际创建了stack context；浮动可以和normal flow中的其他box发生重叠，将在non-positioned in-flow block之前， 在in-flow inline之后。</li>
-</ol>
-<h3 id="float属性"><a href="#float属性" class="headerlink" title="float属性"></a>float属性</h3><ol>
-<li>只适用于不是绝对定位类型的元素；根元素上float视为none。</li>
-<li>一个向左浮动box的left outer edge不能在cobtaining block的left edge的左边，向右浮动类似。</li>
-<li>如果current box是向左浮动的，并且在这之前源文档中还有元素生成了左浮动盒，那么对于每一个之前的盒，要么当前盒的left outer edge在之前的盒的right outer edge的右边，要么它的top要比之前的盒的bottom低，右浮动盒类似。</li>
-<li>一个左浮动盒的right outer edge不能位于接着它的任意右浮动盒的left outer edge的右边，右浮动盒类似。</li>
-<li>一个浮动盒的outer top不能高于其containing block的top。当浮动（盒）出现在两个合并的margin之间时，浮动（盒）的定位就像它有一个empty anonymous block parent存在于（当前）流一样。这个父级的位置通过margin collapse through章节中的规则来定义</li>
-<li>一个浮动盒的outer top不能高于源文档中任何在此之前的元素生成的block box或者floated box的outer top。</li>
-<li>一个元素的浮动盒的outer top不能高于任何含有源文档中在此之前的元素生成的盒的line box的top。</li>
-<li>左边存在另一个左浮动盒的左浮动盒的outer right不能位于其包含块的right边的右边（不严谨的：一个左浮动盒不能超出right边，除非它已经尽量向左（紧挨着包含块的left边）了）。右浮动元素也有类似的规则。</li>
-<li>浮动盒必须尽量往高处放，左浮动尽量往左放，右浮动尽量往右放；更高的位置比更左或更右更优先。</li>
-</ol>
-<h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><ol>
-<li>一个元素的盒的哪一边不能与之前的浮动盒相邻；不考虑元素内的浮动和其它BFC中的浮动。</li>
-<li>要求该盒的top border edge位于源文档中在此之前的元素形成的所有浮动盒的bottom outer edge下方。</li>
-<li>值不为’none’就将可能引入clearance。clearance会阻止margin合并，并作为元素margin-top上方的空间。用来在竖直方向上推着元素越过浮动。</li>
-<li>计算clearance时，需要假定该元素没有clear属性时的top border edge；如果此时的top border edge的没有越过（past）相关的浮动（盒），那么就得引入空隙，并影响margin的合并。</li>
-<li>空隙的amount被设置为下面两者的较大值：把block的border edge放在最低的将被clear的浮动的bottom outer edge所必需的高度；把block的top border边放在其假定位置（clear为’none’时的位置），所必需的高度。</li>
-<li>clearance可以是0或者<strong>负值</strong>。</li>
-<li>当clearance应用于浮动元素时，将给浮动定位增加一条规则：浮动top outer edge必须处于所有在此之前的左浮动盒（’clear: left’），或者所有在此之前的右浮动盒（’clear: right’）的bottom outer edge下方，或者两者都要满足（’clear: both’）。</li>
-</ol>
-<h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a>绝对定位</h3><ol>
-<li>可能会遮住其它盒的内容（或者它们自身被遮住），取决于重叠盒的stack levels。包括fixed和absolute。</li>
-</ol>
-<h3 id="display-position和float之间的关系"><a href="#display-position和float之间的关系" class="headerlink" title="display, position和float之间的关系"></a>display, position和float之间的关系</h3><ol>
-<li>如果display: none，postion和float均不应用，元素不生成box。</li>
-<li>否则，如果position为absolute或fixed, 盒是绝对定位的，并且float的computed value为none，盒的位置由top, right, bottom, left和盒的containing block一起决定, display的计算值根据如下设置：inline-table-&gt;table; inline, table-row-group, table-column, table-column-group, table-header-group, table-footer-group, table-row, table-cell, table-caption, inline-block-&gt;block; 其余计算值与指定值相同。</li>
-<li>否则，如果float不为none，盒是浮动的，display计算值如上规则计算。</li>
-<li>否则，如果是根元素，display计算值如上规则计算，但list-item除外，未定义。</li>
-<li>否则，display计算值采用指定值。</li>
-</ol>
-<h3 id="Layered-presentation"><a href="#Layered-presentation" class="headerlink" title="Layered presentation"></a>Layered presentation</h3><ol>
-<li>z-index: 应用于positioned元素，指定了在当前stacking context中的stack level；指定该box是否建立一个stacking context。</li>
-<li>每个盒都属于一个stacking context。给定stacking context中每个positioned盒都有一个整型堆叠层级，表示它在同一堆叠上下文中相对于其它堆叠层级的Z轴上的位置。堆叠层级更大的总被格式化在堆叠层级低的前面，盒可以有负的堆叠层级。同一个堆叠上下文中堆叠层级相同的盒按照文档树顺序从后向前堆叠。每个stacling context是atomic的。</li>
-<li>root元素形成root stacking coontext。其它stacking context由任意’z-index’的计算值不为’auto’的positioned元素生成。</li>
-<li>绘制顺序：生成stacking context元素的background和border；stacking level为负数的子级stacking context（最负的优先）；in-flow，none-inline，non-positioned后代；non-positioned的浮动（元素）；in-flow，inline，non-positioned的后代，包括inline table和inline block；stacking level为0的子级stacking context，以及stacking level为0的positioned的后代；stacking level为正数的子级stacking context（最小的优先）。</li>
-</ol>
-<h3 id="文本方向：direction和unicode-bidi"><a href="#文本方向：direction和unicode-bidi" class="headerlink" title="文本方向：direction和unicode-bidi"></a>文本方向：direction和unicode-bidi</h3><h1 id="可视化格式模型细节"><a href="#可视化格式模型细节" class="headerlink" title="可视化格式模型细节"></a>可视化格式模型细节</h1><h3 id="containing-block"><a href="#containing-block" class="headerlink" title="containing block"></a>containing block</h3><ol>
-<li>一个元素生成的盒的position和size有时依赖于它的containing block，它的containing block的定义如下：根元素所在的containing block被称为initial containing block，具有viewport的大小；如果一个元素position是relative或者static，它的containing block由最近的祖先block container的coontent区建立；如果position为fixed，containing block由viewport建立；如果position为absolute，containing block由最近的position为relative, fixed或者absolute的祖先元素建立，具体如下：如果该祖先是一个inline element，containing block就是环绕该元素生成的第一个和最后一个inline box的padding box的bounding box，如果元素跨行，则container block是未定义的；否则，containing block就是该祖先的padding边界形成。</li>
-</ol>
-<h3 id="内容宽度-width"><a href="#内容宽度-width" class="headerlink" title="内容宽度 width"></a>内容宽度 width</h3><ol>
-<li>应用于除non-replaced的inline, table row和row group。</li>
-<li>指定一个百分比根据生成的盒的包含块的宽度来计算。如果包含块的宽度取决于该元素的宽度，那么产生的布局在CSS 2.1中是未定义的。</li>
-</ol>
-<h3 id="计算width和margin"><a href="#计算width和margin" class="headerlink" title="计算width和margin"></a>计算width和margin</h3><ol>
-<li>usesd value就是把计算值auto替换成一些合适的值，把百分比根据包含块计算出来，但存在例外。以下情况需要加以区分（ 下面要计算的width的used value只是一个暂定的，可能不得不计算很多次，取决于min-width和max-width）：</li>
-<li><strong>inline, none-replaced element</strong>：width属性不适用。计算值为auto的margin-left或者margin-right对应的应用值为0。</li>
-<li><strong>inline, replaced element</strong>：计算值为auto的margin-left或者margin-right的应用值为0；如果height和width的computed value都是auto，并且该元素还具有内在宽度，那么这个内在宽度就是width的used value；如果height和width的计算值都是auto，并且该元素没有内在宽度，但具有内在高度和内在比例，或者如果width的计算值为auto，height具有其它计算值，并且该元素有内在比例，那么width的应用值为：(高度的应用值) * (内在比例)；如果height和width的计算值都是auto，并且该元素具有内在比例但没有内在高度或者宽度，那么width的应用值在CSS 2.1是未定义的，然而，建议如果包含块的宽度不依赖可替换元素的宽度，那么’width’的应用值根据用于常规流中块级不可替换元素的约束等式来计算；否则，如果width的计算值为auto，并且该元素具有内在宽度，那么这个内在宽度就是width的应用值；否则，如果width的计算值为auto，但不满足上面的条件，那么width的应用值变为300px，如果300px对于适应设备来说太宽，UA应该应用适应设备的最大的比例为2:1的矩形代替。</li>
-<li><strong>block-level, non-replaced elements in normal flow</strong>：需要保持如下约束，margin-left + border-left-width + padding-left + width + padding-right + border-right-width + margin-right = containing block的宽度；如果width的computed value不为auto，且其余值computed value也不为auto，则这些值over-constrained，根据direction，若ltr则用margin-right来满足，若rtl则用margin-left来满足；如果width的computed value不为auto，其余值中有computed value为auo，则用它的used value来满足；如果width为auto，其余为auto的值used value为0，width用来满足等式；如果margin-left和margin-right都为auto，则平分以至于水平居中。</li>
-<li><strong>Block-level, replaced elements in normal flow</strong>：width的used value由replaced inline-level 元素的规则决定；用none-replaced block-level element的规则来确定margin。</li>
-<li><strong>Floating, non-replaced elements</strong>：如果margin-left或者margin-right的computed value为auto，则应用值为0；如果width的computed value为auto，应用值为shrink-to-fit宽度，算法与table cell的automatic table layout算法类似，preferred width只包含显式换行计算出，preferred minimum width尝试所有可能的换行计算出，available width通过containing block的宽度减去margin-left，border-left-width，padding-left，padding-right，border-right-width，margin-right和所有相关滚动条的宽度的应用值得出。shrink-to-fit的宽度就是min(max(preferrd minimum width, available width), preferrd width)。</li>
-<li><strong>Floating, replaced elements</strong>：如果margin-left或者margin-right的computed value为auto，则应用值为0。width的used value由inline，replaced元素规则决定。</li>
-<li>static position：指4方面，static-position containing block是元素position为static且float为none时的containing block；left static position是从containing block的left边到作为该元素的第一个盒的假想盒的left margin边的距离，假想盒的position属性是static并且float为none；如果假想盒在containing block的左边，那么值为负；right的static position是从containing block的right边到与上面相同的假想盒的right margin边，如果假想盒在containing block边的左边，那么值为正；top的static position是从containing block的top edge到假想盒的top margin edge。</li>
-<li>除下一条规则所列情况，均需如下计算：如果left和width都是auto，right不是auto，则宽度shrink-to-fit，再求出left；如果width和right都是auto，left不是auto，则宽度shrink-to-fit，再求出right；如果left和right都是auto，width不是auto，如果建立static-position containing block元素的direction属性是ltr，就把left设置为static position，然后求出right（如果direction是rtl，把right设置为static position，然后求出left）；如果left是auto，width和right都不是auto，则求出left；如果width是auto，left和right都不是auto，则求出width；如果right是auto，left和width都不是auto，则求出right。</li>
-<li><strong>Absolutely positioned, non-replaced elements</strong>：需符合以下等式：left + margin-left + border-left-width + padding-left + width + padding-right + border-right-width + margin-right + right = width of containing block；如果left，width和right全都是auto：先把所有margin-left和margin-right的auto设置为0，然后，如果建立static-position containing bloock的元素的direction属性为ltr，把left设置为static-position并应用下面的第3条规则，否则把right设置为static-position并应用上面的第1条规则；如果这3个值都不是auto：如果margin-left和margin-right都是auto，添加额外约束：2个margin的值相等，如果此约束会让它们为负，则当containing block的direction是ltr (rtl)，把margin-left (margin-right)设置为0，再求出margin-right (margin-left)；如果margin-left或者margin-right有一个是auto，就解方程求这个值；如果这些值是over-constrained，就忽略left（如果containing block的direction是rtl）或者right（如果direction为ltr）的值，再求出对应的值；其他情况先把为auto的margin-left或margin-right的used value设为0，按上一条计算。</li>
-<li><strong>Absolutely positioned, replaced elements</strong>：width的used value由inline replaced element的规则决定，如果margin-left或者margin-right被指定为auto，used value由下面的规则决定；如果left和right值都是auto，且建立static-position containing block的元素的direction属性为ltr，则left设置为static-position，如果direction为rtl，就把right设置为static-position；如果left或者right为auto，所有值为auto的margin-left和margin-right替换为0；</li>
-<li><strong>inline-block, non-replaced elements in normal flow</strong>：如果width为auto，used value与浮动元素一样是shrink-to-fit，computed value为auto的margin-left或者margin-right的used value变为0。</li>
-<li><strong>inline-block, replaced elements in normal flow</strong>：与inline，replaced element规则完全一致。</li>
-</ol>
-<h3 id="Minimum-and-maximum-widths"><a href="#Minimum-and-maximum-widths" class="headerlink" title="Minimum and maximum widths"></a>Minimum and maximum widths</h3><ol>
-<li>应用于除none-replaced inline，table row和row group之外的所有元素；对table，inline-table，table cell，table column和column group是未定义的。</li>
-<li>先根据width和margin的规则计算出width；如果得到的width该width比max-width大，则用max-width的值代入width的computed value再进行计算；如果得到的width比min-width小，则用min-width的值代入width的computed value再进行计算（不影响真正的computed value）。</li>
-<li>但对于有内在比例并且width和height都被指定为auto的replaced元素，规则如下：取max-width和max-height为max（max，min），下列规则中w和h代表忽略min-width，min-height，max-width和max-height属性后，width和height的计算结果；通常是内在宽度和高度，但若是具有内在比例的replaced element的情况，可能并不是；计算结果当做computed value代入计算width和margin的规则得到最后结果。</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>违反的约束</th>
-<th>解得width</th>
-<th>解得height</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>none</td>
-<td>w</td>
-<td>h</td>
-</tr>
-<tr>
-<td>w &gt; max-width</td>
-<td>max-width</td>
-<td>max(max-width * h/w, min-height)</td>
-</tr>
-<tr>
-<td>w &lt; min-width</td>
-<td>min-width</td>
-<td>min(min-width * h/w, max-height)</td>
-</tr>
-<tr>
-<td>h &gt; max-height</td>
-<td>max(max-height * w/h, min-width)</td>
-<td>max-height</td>
-</tr>
-<tr>
-<td>h &lt; min-height</td>
-<td>min(min-height * w/h, max-width)</td>
-<td>min-height</td>
-</tr>
-<tr>
-<td>(w &lt; min-width) and (h &gt; max-height)</td>
-<td>min-width</td>
-<td>max-height</td>
-</tr>
-<tr>
-<td>(w &gt; max-width) and (h &lt; min-height)</td>
-<td>max-width</td>
-<td>min-height</td>
-</tr>
-<tr>
-<td>(w &gt; max-width) and (h &gt; max-height), where (max-width/w ≤ max-height/h)</td>
-<td>max-width</td>
-<td>max(min-height, max-width * h/w)</td>
-</tr>
-<tr>
-<td>(w &gt; max-width) and (h &gt; max-height), where (max-width/w &gt; max-height/h)</td>
-<td>max(min-width, max-height * w/h)</td>
-<td>max-height</td>
-</tr>
-<tr>
-<td>(w &lt; min-width) and (h &lt; min-height), where (min-width/w ≤ min-height/h)</td>
-<td>min(max-width, min-height * w/h)</td>
-<td>min-height</td>
-</tr>
-<tr>
-<td>(w &lt; min-width) and (h &lt; min-height), where (min-width/w &gt; min-height/h)</td>
-<td>min-width</td>
-<td>min(max-height, min-width * h/w)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="内容高度：height"><a href="#内容高度：height" class="headerlink" title="内容高度：height"></a>内容高度：height</h3><p>1.百分比的计算参照生成盒的containing block；但如果containing block的高度没有显式声明（比如依赖内容高度），并且本元素不是绝对定位，computed value计算为auto（一个绝对定位元素的containing block高度独立于元素本身，因此百分比可以解出，但通常需要直到在此之后的元素处理完毕后才能获得此高度）。</p>
-<h3 id="计算height和margin"><a href="#计算height和margin" class="headerlink" title="计算height和margin"></a>计算height和margin</h3><ol>
-<li><strong>Inline, non-replaced elements</strong>：height不适用。content area的高度应该基于字体，但本规范没有具体说明。（<strong>em-box</strong>）</li>
-<li><strong>Inline replaced elements, block-level replaced elements in normal flow, ‘inline-block’ replaced elements in normal flow and floating replaced elements</strong>：如果margin-top或者margin-bottom为auto，其used value为0；如果height和width的computed value都是auto，并且元素还具有内在高度，那么这个内在高度就是height的used value；否则，如果height的computed value为auto，并且该元素具有内在比例，那么height的used value为：(宽度的used value) / (内在比例)；否则，如果height的computed value为auto，并且该元素具有内在高度，那么这个内在高度就是height的used value；否则，如果height的computed value为auto，但上面的条件都不满足，那么height的used value必须设置为比例为2:1，高度不超过150px并且宽度不超过设备宽度的最大矩形的高度。</li>
-<li><strong>Block-level non-replaced elements in normal flow when ‘overflow’ computes to ‘visible’</strong>：当overflow的computed value不为visible但已经propagate to viewport时，本节也适用；如果margin-top或者margin-bottom为auto，其used value为0；元素的height为从其top content边到下面第一个适用的（位置）的距离：如果建立了IFC，是到最后一个line box的bottom edge的距离；如果in-flow的最后一个子级（忽略float和绝对定位，相对定位的忽略偏移来考虑）的bottom margin没有与元素的bottom margin合并，到此子级margin bottom边的距离；如果最后一个子级的top margin没有和元素的bottom margin合并的话，到此子级bottom border edge的距离；否则就是0。</li>
-<li>除了符合以下规则，均按此计算height：如果top和height都是auto，bottom不是auto，则高度是根据hright为auto的算法由内容决定，把值为auto的margin-top和margin-bottom设置为0，再求出top；如果top和bottom都是auto，height不是auto，则把top设置为static position，把值为auto的margin-top和margin-bottom设置为0，再求出bottom；如果height和bottom都是auto，top不是auto，则高度根据height为auto的算法由内容决定，把值为auto的margin-top和margin-bottom设置为0，再求出bottom；如果top是auto，height和bottom都不是auto，则把值为auto的margin-top和margin-bottom设置为0，再求出top；如果height是auto，top和bottom都不是auto，则把值为auto的margin-top和margin-bottom设置为0，再求出height。<br>如果’bottom’是’auto’，’top’和’height’都不是’auto’，则把值为’auto’的’margin-top’和’margin-bottom’设置为0，再求出’bottom’</li>
-<li><strong>Absolutely positioned, non-replaced elements</strong>：需符合以下等式：top + margin-top + border-top-width + padding-top + height + padding-bottom + border-bottom-width + margin-bottom + bottom = height of containing block；如果top，height和bottom都是auto，把top设置为static position并应用上一条的第3条规则：如果top，height和bottom都不是auto：如果margin-top和margin-bottom都是auto，添上额外约束：2个margin的值相等，如果margin-top或者margin-bottom有一个是auto，解方程求出这个值，如果被过度约束了，就忽略bottom的值再求；否则，按照上一条求值。</li>
-<li><strong>Absolutely positioned, replaced elements</strong>：height的used value由inline，replaced元素规则决定，如果margin-top或者margin-bottom被指定为auto，其used value如下计算：根据replaced元素规则求出height，套入non-replaced的规则。</li>
-<li><strong>Complicated cases</strong>：适用于normal flow中overflow的computed value不为visible的block-level，non-replaced元素；inline-block，non-replaced元素以及floating，non-replaced元素；如果margin-top或者margin-bottom为auto，其used value为0，如果height是auto，参照以下第二条算法；对于inline-block元素，在计算行盒的高度时，要用到margin box。</li>
-<li><strong>‘Auto’ heights for block formatting context roots</strong>：如果它只含有inline-level子级，高度就是topmost的line box的top与bottommost的line box的bottom之间的距离；如果只含有block-level子级，高度由就是topmost的block-level子级盒的top margin-edge到bottommost的block-level子级盒的bottom margin-edge之间的距离；绝对定位的子级会被忽略，而相对定位的盒不考虑其偏移；此外，如果元素含有任意bottom margin边位于元素的content边下方的的浮动后代，那么高度增加至能够包含这些边；只考虑参与此块级格式化上下文的浮动，不考虑绝对定位的后代中的浮动或者其它浮动。</li>
-</ol>
-<h3 id="min-height和max-height"><a href="#min-height和max-height" class="headerlink" title="min-height和max-height"></a>min-height和max-height</h3><ol>
-<li>将如下影响height的used value：计算暂定的应用高度（不考虑min-height和max-height）遵循上面“计算height与margin”中的规则，如果这个暂定高度大于max-height，就再应用一遍上面的规则，这次把max-height的值作为height的计算值，如果产生的高度小于min-height，就再应用一遍上面的规则，但这次把min-height的值作为height的计算值。</li>
-</ol>
-<h3 id="计算行高：line-hight和vertical-align"><a href="#计算行高：line-hight和vertical-align" class="headerlink" title="计算行高：line-hight和vertical-align"></a>计算行高：line-hight和vertical-align</h3><ol>
-<li>一个line box的高度决定如下：对每个元素计算高度，replaced, inline-block和inline-table元素来说，是margin box的高度，对inline box来说是它们的line-hight；行盒高度是最高的盒的top与最低的盒的bottom之间的距离（包括下面’line-height’中解释的strut）</li>
-<li>leading和half leading：任何字体存在height A和depth D，UA把non-replaced的inline box中按baseline对齐，不含任何font就认为还有一个宽度为0的strut，具有第一个可用字体的A和D；分别在A和D上加half leading（leading可以为负）。</li>
-<li></li>
-</ol>
-<h1 id="visual-effects"><a href="#visual-effects" class="headerlink" title="visual effects"></a>visual effects</h1><h3 id="overflow-and-clipping"><a href="#overflow-and-clipping" class="headerlink" title="overflow and clipping"></a>overflow and clipping</h3><ol>
-<li>通常内容被限制在content区域内，但是以下情况将超出：一行无法分割换行导致宽度超出；block-level box的width指定为超过containing block的width的值；一个元素的height超过显示指定的containing block的height；绝对定位的元素，这种盒并不一定会根据其祖先的overflow属性裁剪，尤其它们不会被介于自身和包含块之间的任意祖先的overflow裁剪；负的margin导致内容在盒外部；text-indent导致inline box悬挂在外部；clip发生时，裁剪到该盒的padding edge。</li>
-<li>overflow：应用于block container，指定内容overflow时是否clip，但无法指定containing block为viewport或它的祖先元素的后代元素内容的裁剪；根元素或者根元素有一个body子元素，则需要把overflow属性传递到viewport上，被传播的元素必须具有值为visible的overflow；visible应用于viewport时，须解释为auto；scrollbar插入在border内。</li>
-<li>clip：只应用于绝对定位的元素；唯一合法的<shape>值为：rect(<top>, <right>, <bottom>, <left>)，auto时为border edge。</left></bottom></right></top></shape></li>
-<li>visibolity：控制box是否render，display为none将不生成box；不可见的盒仍然会影响布局，而且该元素具有’visibility:visible’的后代将是可见的。</li>
-</ol>
-<h1 id="Generated-content-automatic-numbering-and-lists"><a href="#Generated-content-automatic-numbering-and-lists" class="headerlink" title="Generated content, automatic numbering, and lists"></a>Generated content, automatic numbering, and lists</h1><p>自动生成内容，有时希望不是来自document tree，来自和before和after伪元素一起使用的content以及display为list-item的元素。</p>
-<h3 id="before和-after伪元素"><a href="#before和-after伪元素" class="headerlink" title=":before和:after伪元素"></a>:before和:after伪元素</h3><ol>
-<li>元素生成的box包含:before和:after伪元素的内容，伪元素将从此元素继承任何能够继承的属性，不继承的属性取initial value。</li>
-</ol>
-<h3 id="content属性"><a href="#content属性" class="headerlink" title="content属性"></a>content属性</h3><ol>
-<li>应用于:before和:after伪元素，属性值none不生成伪元素，属性值normal的compouted value对于:before和:after均为none；其他属性值有<string>, <uri>, <strong>attr</strong>。</uri></string></li>
-<li>‘\A’可以用做content、内的换行，但受white-space的约束。</li>
-</ol>
-<h3 id="引号"><a href="#引号" class="headerlink" title="引号"></a>引号</h3><ol>
-<li>quotes属性用来指定引号所使用的表示对。</li>
-</ol>
-<h3 id="Automatic-counters-and-numbering"><a href="#Automatic-counters-and-numbering" class="headerlink" title="Automatic counters and numbering"></a>Automatic counters and numbering</h3><p>counter-increment属性接受一个或者多个计数器名（identifier），每个后面都可以跟一个可选的整数，这个整数表示每次出现该元素时计数器递增几，默认增量是1，可以接受0和负数；counter-reset属性也接受一个或者多个计数器，每个后面可以跟一个可选的整数，该整数给出了该元素每次出现时计数器的设定值，默认为0；如果一个元素increment/reset一个计数器并使用了它（在其:before或:after伪元素的’content’属性中），计数器是在increment/reset之后才使用的；如果一个计数器被同时rest和increment，计数器会先reset再increment；如果给同一个计数器指定了多次counter-reset和counter-increment属性的值，计数器的每次重置/递增会按指定的顺序来处理；counter-reset属性遵循cascading规则。</p>
-<ol>
-<li>Nested counters and scope：counter是self-nesting的，如果在后代元素或者伪元素中reset一个counter的话，讲建立这个counter的一个新实例；一个计数器的scope从document中第一个具有该计数器的counter-reset的元素开始，包括该元素的后代和它后面兄弟及其兄弟的后代，但不包括通过该元素的后续兄弟的counter-reset或者后续相同元素的counter-reset创建的同名计数器范围内的任何元素；如果一个元素或者伪元素上的counter-increment或者content引用了一个不处于任何counter-reset范围的计数器，应该表现得就像已经通过该元素或者伪元素上的一个counter-reset把该计数器重置为0。</li>
-<li>计数器样式：list-style-type的所有属性都可用于计数器。</li>
-<li>display: none的元素的计数器：不生成box或者不生成伪元素将不会使计数器increment或者reset；visibility为hidden的元素会让计数器increment和reset。</li>
-</ol>
-<h3 id="lists"><a href="#lists" class="headerlink" title="lists"></a>lists</h3><ol>
-<li>display: list-item将生成一个pricipal box和一个marker box，marker box的背景是transparent的，background只能指定pricipal box的背景。</li>
-<li>list-style-type：当list-item-image为none或者uri指定的图片无法显示时，指定了list item marker的外观。</li>
-<li>list-style-image：如果该图片具有一个内在宽度和高度，宽度和高度的应用值就是内在宽度和高度；否则，如果该图片具有一个内在比例和一个内在宽度或者内在高度，宽度/高度的应用值与提供的内在宽度/高度相同，缺失的尺寸的应用值根据已提供的尺寸和比例来计算；否则，如果图片具有一个内在比例，则宽度的应用值为1em，高度的应用值根据这个宽度和内在比例计算。如果这会让高度大于1em，那么高度的应用值就设置为1em，宽度的应用值根据这个高度和内在比例来计算；否则，该图片宽度的应用值为其内在宽度，如果有的话，否则就是1em。图片高度的应用值为其内在高度，如果有的话，否则就是1em。</li>
-<li>list-style-position：inside使marker box位于principal box的第一个inline box；</li>
-<li>list-style：list-style-type，list-style-position，list-style-image的简略写法。</li>
-</ol>
-<h1 id="颜色和背景"><a href="#颜色和背景" class="headerlink" title="颜色和背景"></a>颜色和背景</h1><h3 id="Foreground-color：color属性"><a href="#Foreground-color：color属性" class="headerlink" title="Foreground color：color属性"></a>Foreground color：color属性</h3><h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><p>在盒模型中，background指content，padding，border；border的背景在border属性中设置；margin的background是transparent；background-color的initial value也是transparent，因此将导致父级元素的背景透到子元素上；html和body的background属性将propagate to the canvas。</p>
-<ol>
-<li>background-color：initial value是transparent，将使下层的颜色透上来。</li>
-<li>background-image：当image可用时，将在color上层；百分比形式的内在尺寸必须根据为background-position属性建立坐标系的矩形的尺寸来解析；如果具有一个内在宽度或者内在高度和内在比例，那么缺少的尺寸就根据给定的尺寸和比例来计算；如果图片具有一个内在宽度或者内在高度但没有内在宽高比，那么缺少的尺寸被假设为给background-position属性建立坐标系的矩形的尺寸；如果图片没有内在尺寸但具有一个内在比例，就把尺寸假定为不超出给background-position属性建立坐标系的矩形中满足该比例的最大尺寸；如果图片没有内在比例，那么就把尺寸假定为给background-position属性建立坐标系的矩形。</li>
-<li>background-repeat：initial value为repeat，当指定了image时，将使其铺满content，padding和border。</li>
-<li>background-position：initial value为0%，0%；如果只指定一个值，第二个值为center；根元素和body元素上的background虽然传递到了canvas但是定位仍然好像只是针对该元素一样；百分比根据padding box。</li>
-<li>background-attachment：当指定了image时，该属性指定了它应该相对viewport固定（fixed）还是随containing block滚动（scroll）。</li>
-<li>background：简写属性，先将属性设为初始值，再用显式值覆盖。</li>
-</ol>
-<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><h3 id="font-family"><a href="#font-family" class="headerlink" title="font-family"></a>font-family</h3><p>分隔使用逗号，表示alternative。</p>
-<h3 id="font-style"><a href="#font-style" class="headerlink" title="font-style"></a>font-style</h3><p>斜体与否，oblique或italic。</p>
-<h3 id="font-variant"><a href="#font-variant" class="headerlink" title="font-variant"></a>font-variant</h3><p>类似于变成大写，small-cap。</p>
-<h3 id="font-weight"><a href="#font-weight" class="headerlink" title="font-weight"></a>font-weight</h3><p>normal对应于400，bold对应于700；lighter和bolder都是对应于继承的weight而言的。</p>
-<h3 id="font-size"><a href="#font-size" class="headerlink" title="font-size"></a>font-size</h3><p>在所有其它属性上，em和ex长度值参照当前元素字体大小的计算值。在font-size属性上，这些长度单位参照其父元素的字体大小的计算值。</p>
-<h1 id="文本（text）"><a href="#文本（text）" class="headerlink" title="文本（text）"></a>文本（text）</h1><h3 id="text-indent"><a href="#text-indent" class="headerlink" title="text-indent"></a>text-indent</h3><ol>
-<li>指定百分比时参照containing block的width；应用于block container。</li>
-</ol>
-<h3 id="letter-spacing和word-spacing"><a href="#letter-spacing和word-spacing" class="headerlink" title="letter-spacing和word-spacing"></a>letter-spacing和word-spacing</h3><p>在默认间距基础上指定额外的间距。</p>
-<h3 id="text-decoration"><a href="#text-decoration" class="headerlink" title="text-decoration"></a>text-decoration</h3><p>当继承时，颜色将使用继承自祖先的前景色（color）。</p>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><h3 id="css-table-model"><a href="#css-table-model" class="headerlink" title="css table model"></a>css table model</h3><p>display为table-column或者tabl-column-group的元素将不会被渲染。</p>
-<ol>
-<li>row group box：A table-row-group, table-header-group, or table-footer-group；</li>
-<li>proper table child：A table-row box, row group box, table-column box, table-column-group box, or table-caption box；</li>
-<li>proper table row parent：A table or inline-table box or row group box；</li>
-<li>internal table box：A table-cell box, table-row box, row group box, table-column box, or table-column-group box.</li>
-<li>tabular container：A table-row box or proper table row parent</li>
-<li>按照如下三步骤来处理：首先移除不相关的盒：包括所有table-column的后代，所有table-column-group的后代，所有tabular container的 只包含white space的anonymous inline box并且兄弟都是proper table children，所有只包含white space的anonymous inline box并且兄弟都是table-caption或者internal table nox；然后生成缺失的子级容器：如果一个table, inline-table box的子级不是一个proper table child，则用一个anonymous table-row包裹它和它同不是proper table child的兄弟元素，如果一个row group box的子级不是一个table-row，则用一个anonymous table-row包裹它和它同不是table-row的兄弟元素，如果一个table-row的子级不是一个table-cell，则用一个table-cell包裹它和它同不是table-cell的兄弟元素；最后生成缺失的父级：misparent的table-cell将生成一个table-row包裹它和兄弟table-cell，misparent的proper table child将生成一个table或者inline-table包裹它和它兄弟proper table child。</li>
-</ol>
-<h3 id="columns"><a href="#columns" class="headerlink" title="columns"></a>columns</h3><ol>
-<li>width将给此column设定一个min-width；当table-cell和row的背景都是透明时，background将给比column设置背景色；visibility为collapse理论上会截掉此column，但浏览器实现不完全，除collapse外的其他值无效；当table上的border-collapse为collapse时，column上的border将起效，但需根据冲突解决方法在cell上选一条border。</li>
-</ol>
-<h3 id="table的visual-formatting-model"><a href="#table的visual-formatting-model" class="headerlink" title="table的visual formatting model"></a>table的visual formatting model</h3><ol>
-<li>可以表现得像一个block-level（对于display: table）或者inline-level（对于display: inline-table）元素；这两种情况下，表格都会生成一个table wrapper box的pricipal block box，table wrapper box的level由display属性决定并且生成新的BFC，它包含table box以及所有caption box（按文档顺序）。table box是一个含有该表格的internal table box的block level box。caption box是保留其原本的content，padding，margin和border区的block level box，会被当作table wrapper box中的常规块盒来渲染。caption box放在表格盒前面还是后面由caption-side属性决定；table box用在对一个inline-table进行基线竖直对齐时，table wrapper box的宽度是它里面的table box的border边宽度（border-edge width）。表格上’width’和’height’的百分比是相对于table wrapper box的containing box的，position，float，margin-*，top，right，bottom和left属性的计算值被应用在table wrapper box上，所有其它不可继承的属性值应用在table box上，（对于表格元素上没有应用于表格和表格容器盒的值，就改用初始值）。</li>
-<li>caption的position和aligment：在css3中已改为top-outside和bottom-outside。</li>
-</ol>
-<h3 id="table-content的visual-layout"><a href="#table-content的visual-layout" class="headerlink" title="table content的visual layout"></a>table content的visual layout</h3><ol>
-<li>internal table element都没有margin（也就是除了caption），并且其中只有cell有padding。</li>
-<li>cell占据的首个column不能与之前row的cell发生overlap。</li>
-<li>在collapsing border model中，row, column等的边界与假想的grid cell重合，seperated border model中有空隙（border-spacing）。</li>
-<li>cell的float将使它不再是table的一部分，anonymous table object将生成。</li>
-</ol>
-<h3 id="table的layer"><a href="#table的layer" class="headerlink" title="table的layer"></a>table的layer</h3><ol>
-<li>从下往上：table, column group, column, row group, row, table cell；它们的背景将影响从它们内部开始originate的cell，如果内容为空cell的empty-cells为hide（需在separate border model下），则table的背景将透上来。</li>
-<li>没有元素或者伪元素为内容的cell称为missing cell，将被当做anonymous table-cell处理。</li>
-</ol>
-<h3 id="table-width和算法table-layout属性"><a href="#table-width和算法table-layout属性" class="headerlink" title="table width和算法table-layout属性"></a>table width和算法table-layout属性</h3><ol>
-<li>除了fixed layout，UA可以自由选择算法使速度比精度优先。</li>
-<li>table的width算法不同于普通width，到解得width之后，其他如margin算法则与普通情况相同。</li>
-<li>fixed table-layout：快速算法，不依赖于table内容；width通常需要显式指定，当被指定auto时将使用auto table-layout，特殊情况当UA支持width为auto的fixed table-layout时，width将按普通情况计算；column的width当有指定或者包含的第一个cell有指定时就是指定宽度，没有时将和其他column平分剩余宽度；只要拿到table第一行就能得到整个table的布局。</li>
-<li>automatic table layout：和fixed layout不同，将至少遍历table一遍，因此效率比较低；首先得到每个cell的min和max的width，然后根据只占一个column的cell得到该column的min和max的width，在然后根据跨多列的cell和被跨的其他column一起保证cell的min和maxwidth得到满足，最后如果column所在的column group有指定width，应使column的min的width之和至少达到column的width；类似也可以得到caption的min的width；当table或者inline-table的width显示指定不为auto时，将取三者的最大作为table宽度的应用值，当table或者inline-table的width为auto时，将取前两者和containing block的width中最大为table的应用值（特殊的，当这个width的值大于所有column max的width的和时，取max width和caption的较大者为应用值）。</li>
-</ol>
-<h3 id="table的高度算法"><a href="#table的高度算法" class="headerlink" title="table的高度算法"></a>table的高度算法</h3><ol>
-<li>在table上设置的height除了auto外都将视为min-height，auto指height是各个row的height之和外加spacing和border，table上height设置为auto讲使用row的MIN hight值；而各个row的height是该row heihgt的computed value，该row内各cell height的computed value以及该cell的最小所需height中的最大值，其中table cell的height由最小所需height值决定，在table-cell上指定的height只影响该cell所在row的高度；某一row的baseline由在该行内的具有top到baseline最大距离的cell决定，cell的baseline由cell内的第一个in-flow的line box或者in-flow table-row决定，若没有这样的元素，baseline是这个table-cell的bottom content edge；如果table-row没有据baseline对齐的元素，则它自身的baseline是最低的cell的bottom content edge。</li>
-<li>cell放置顺序：首先，放置那些相对于baseline对齐的cell，这将建立row baseline；然后，放置具有vertical-align: top的cell；现在row具有top，可能有baseline，还有个暂定高度，（暂定高度）为从顶部到目前已定位的单元格中最低的底部（见下面单元格padding的情况）；如果任意剩余的与bottom或者middle对齐的单元格具有大于该行当前高度的高度，通过降低bottom，将该row的高度增加至这些cell高度的最大值；最后定位其余cell；小于row高度的cell box会被添上额外的top或者bottom padding。</li>
-</ol>
-<h3 id="column中的水平对齐"><a href="#column中的水平对齐" class="headerlink" title="column中的水平对齐"></a>column中的水平对齐</h3><ol>
-<li>text-align</li>
-</ol>
-<h3 id="动态行列效果"><a href="#动态行列效果" class="headerlink" title="动态行列效果"></a>动态行列效果</h3><ol>
-<li>visibility: collaspse将row或column等同于display: none，但是将不强制table进行re-layout。</li>
-</ol>
-<h3 id="table的border"><a href="#table的border" class="headerlink" title="table的border"></a>table的border</h3><ol>
-<li>两种边框模型：collaspe和separare，collapse使边框相连，separate使边框相对独立。</li>
-<li>separate border model：有border-spacing属性，指定一个值时为水平间距，两个值时后一个为竖直间间距，table到边上的cell的距离为指定的border-spacing加上此边的padding；border-spacing的空间内为table的background，column, row, column-group, row-group只包含cell；empty-cells（visibility为hidden或者不包含float和in-flow的元素）在此model下为hide时将使table背景透上来以及border的不显示，当整个row的cell都是empty且empty-cells属性都为hide时，此行高度为0。</li>
-<li>collapsing border model：row的宽度等式：row-width = (0.5 <em> border-width1) + padding-left1 + width1 + padding-right1 + border-width1 + padding-left2 +…+ padding-rightn + (0.5 </em> border-widthn)；UA将使用第一行第一的和最后一个cell border的一半分别作为table的左右border，如果之后的行有超过第一行的border宽度，这些超过的宽度将进入table的margin（这些超出的内容需要考虑进是否overflowtable的父元素）；table的top和bottom的border将分别采用第一行和最后一行cell宽度最大的border；此border model下的table没有padding，table的width计算到border。</li>
-<li>边框的冲突处理（取最显眼的）：border-style为hidden的border最优先，会抑制此位置的所有其他border；具有none样式的border优先级最低，只有在与该边相关的所有元素的border属性为none时，border才会被忽略；其次，width更大的边框将会采用，如果有好几个都具有相同的border-width，那么样式按这样的顺序来选择：double，solid，dashed，dotted，ridge，outset，groove和优先级最低的：inset；如果border style只在颜色上有差异，更在table layer上层的更优先更上面的更优先，更左边的更优先（direction为ltr时）。</li>
-</ol>
-<h1 id="用户界面"><a href="#用户界面" class="headerlink" title="用户界面"></a>用户界面</h1><h3 id="outline"><a href="#outline" class="headerlink" title="outline"></a>outline</h3><ol>
-<li>outline不引起reflow。</li>
-</ol>
-
-          
+        
+          <a class="article-more-a" href="/2017/02/12/CSS2-1-SPEC-翻译及笔记/#more">more >></a>
         
       
-    </div>
 
-    <div>
       
     </div>
-
-    <div>
+    <div class="article-info article-info-index">
       
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">css translation</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/02/12/CSS2-1-SPEC-翻译及笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
     </div>
+  </div>
+</article>
 
 
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
 
 
-    
-      
 
-  
+
+
 
   
   
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/12/hello-world/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="everywill">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="everywill">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="everywill" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/02/12/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-12T19:50:02+08:00">
-                2017-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
 
 
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-
-          
           </div>
-          
-
-
-          
-
         </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 everywill
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
     </div>
   </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="everywill" />
-          <p class="site-author-name" itemprop="name">everywill</p>
-          <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-        <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">Artikel</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-
+</footer>
     </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">everywill</span>
-</div>
-
-
-<div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
-
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
-
-
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: false,
+		showTags: false
+	}
 </script>
 
+<script>!function(t){function n(r){if(e[r])return e[r].exports;var o=e[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,n),o.loaded=!0,o.exports}var e={};return n.m=t,n.c=e,n.p="./",n(0)}([function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function o(t,n){var e=/\/|index.html/g;return t.replace(e,"")===n.replace(e,"")}function i(){for(var t=document.querySelectorAll(".js-header-menu li a"),n=window.location.pathname,e=0,r=t.length;e<r;e++){var i=t[e];o(n,i.getAttribute("href"))&&(0,d.default)(i,"active")}}function u(t){for(var n=t.offsetLeft,e=t.offsetParent;null!==e;)n+=e.offsetLeft,e=e.offsetParent;return n}function f(t){for(var n=t.offsetTop,e=t.offsetParent;null!==e;)n+=e.offsetTop,e=e.offsetParent;return n}function c(t,n,e,r,o){var i=u(t),c=f(t)-n;if(c-e<=o){var a=t.$newDom;a||(a=t.cloneNode(!0),(0,h.default)(t,a),t.$newDom=a,a.style.position="fixed",a.style.top=(e||c)+"px",a.style.left=i+"px",a.style.zIndex=r||2,a.style.width="100%",a.style.color="#fff"),a.style.visibility="visible",t.style.visibility="hidden"}else{t.style.visibility="visible";var s=t.$newDom;s&&(s.style.visibility="hidden")}}function a(){var t=document.querySelector(".js-overlay"),n=document.querySelector(".js-header-menu");c(t,document.body.scrollTop,-63,2,0),c(n,document.body.scrollTop,1,3,0)}function s(){document.querySelector("#container").addEventListener("scroll",function(t){a()}),window.addEventListener("scroll",function(t){a()}),a()}function l(){x.default.versions.mobile&&window.screen.width<800&&(i(),s())}var p=e(71),d=r(p),v=e(72),y=(r(v),e(84)),h=r(y),b=e(69),x=r(b),m=e(75),g=r(m),w=e(70);l(),(0,w.addLoadEvent)(function(){g.default.init()}),t.exports={}},function(t,n){var e=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=e)},function(t,n){var e={}.hasOwnProperty;t.exports=function(t,n){return e.call(t,n)}},function(t,n,e){var r=e(49),o=e(15);t.exports=function(t){return r(o(t))}},function(t,n,e){t.exports=!e(8)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,n,e){var r=e(6),o=e(12);t.exports=e(4)?function(t,n,e){return r.f(t,n,o(1,e))}:function(t,n,e){return t[n]=e,t}},function(t,n,e){var r=e(10),o=e(30),i=e(24),u=Object.defineProperty;n.f=e(4)?Object.defineProperty:function(t,n,e){if(r(t),n=i(n,!0),r(e),o)try{return u(t,n,e)}catch(t){}if("get"in e||"set"in e)throw TypeError("Accessors not supported!");return"value"in e&&(t[n]=e.value),t}},function(t,n,e){var r=e(22)("wks"),o=e(13),i=e(1).Symbol,u="function"==typeof i,f=t.exports=function(t){return r[t]||(r[t]=u&&i[t]||(u?i:o)("Symbol."+t))};f.store=r},function(t,n){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,n,e){var r=e(35),o=e(16);t.exports=Object.keys||function(t){return r(t,o)}},function(t,n,e){var r=e(11);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,n){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,n){t.exports=function(t,n){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:n}}},function(t,n){var e=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++e+r).toString(36))}},function(t,n){var e=t.exports={version:"2.4.0"};"number"==typeof __e&&(__e=e)},function(t,n){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,n){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(t,n){t.exports={}},function(t,n){t.exports=!0},function(t,n){n.f={}.propertyIsEnumerable},function(t,n,e){var r=e(6).f,o=e(2),i=e(7)("toStringTag");t.exports=function(t,n,e){t&&!o(t=e?t:t.prototype,i)&&r(t,i,{configurable:!0,value:n})}},function(t,n,e){var r=e(22)("keys"),o=e(13);t.exports=function(t){return r[t]||(r[t]=o(t))}},function(t,n,e){var r=e(1),o="__core-js_shared__",i=r[o]||(r[o]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,n){var e=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:e)(t)}},function(t,n,e){var r=e(11);t.exports=function(t,n){if(!r(t))return t;var e,o;if(n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;if("function"==typeof(e=t.valueOf)&&!r(o=e.call(t)))return o;if(!n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;throw TypeError("Can't convert object to primitive value")}},function(t,n,e){var r=e(1),o=e(14),i=e(18),u=e(26),f=e(6).f;t.exports=function(t){var n=o.Symbol||(o.Symbol=i?{}:r.Symbol||{});"_"==t.charAt(0)||t in n||f(n,t,{value:u.f(t)})}},function(t,n,e){n.f=e(7)},function(t,n,e){var r=e(1),o=e(14),i=e(46),u=e(5),f="prototype",c=function(t,n,e){var a,s,l,p=t&c.F,d=t&c.G,v=t&c.S,y=t&c.P,h=t&c.B,b=t&c.W,x=d?o:o[n]||(o[n]={}),m=x[f],g=d?r:v?r[n]:(r[n]||{})[f];d&&(e=n);for(a in e)s=!p&&g&&void 0!==g[a],s&&a in x||(l=s?g[a]:e[a],x[a]=d&&"function"!=typeof g[a]?e[a]:h&&s?i(l,r):b&&g[a]==l?function(t){var n=function(n,e,r){if(this instanceof t){switch(arguments.length){case 0:return new t;case 1:return new t(n);case 2:return new t(n,e)}return new t(n,e,r)}return t.apply(this,arguments)};return n[f]=t[f],n}(l):y&&"function"==typeof l?i(Function.call,l):l,y&&((x.virtual||(x.virtual={}))[a]=l,t&c.R&&m&&!m[a]&&u(m,a,l)))};c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,c.U=64,c.R=128,t.exports=c},function(t,n){var e={}.toString;t.exports=function(t){return e.call(t).slice(8,-1)}},function(t,n,e){var r=e(11),o=e(1).document,i=r(o)&&r(o.createElement);t.exports=function(t){return i?o.createElement(t):{}}},function(t,n,e){t.exports=!e(4)&&!e(8)(function(){return 7!=Object.defineProperty(e(29)("div"),"a",{get:function(){return 7}}).a})},function(t,n,e){"use strict";var r=e(18),o=e(27),i=e(36),u=e(5),f=e(2),c=e(17),a=e(51),s=e(20),l=e(58),p=e(7)("iterator"),d=!([].keys&&"next"in[].keys()),v="@@iterator",y="keys",h="values",b=function(){return this};t.exports=function(t,n,e,x,m,g,w){a(e,n,x);var O,S,_,j=function(t){if(!d&&t in A)return A[t];switch(t){case y:return function(){return new e(this,t)};case h:return function(){return new e(this,t)}}return function(){return new e(this,t)}},P=n+" Iterator",E=m==h,M=!1,A=t.prototype,T=A[p]||A[v]||m&&A[m],L=T||j(m),N=m?E?j("entries"):L:void 0,C="Array"==n?A.entries||T:T;if(C&&(_=l(C.call(new t)),_!==Object.prototype&&(s(_,P,!0),r||f(_,p)||u(_,p,b))),E&&T&&T.name!==h&&(M=!0,L=function(){return T.call(this)}),r&&!w||!d&&!M&&A[p]||u(A,p,L),c[n]=L,c[P]=b,m)if(O={values:E?L:j(h),keys:g?L:j(y),entries:N},w)for(S in O)S in A||i(A,S,O[S]);else o(o.P+o.F*(d||M),n,O);return O}},function(t,n,e){var r=e(10),o=e(55),i=e(16),u=e(21)("IE_PROTO"),f=function(){},c="prototype",a=function(){var t,n=e(29)("iframe"),r=i.length,o="<",u=">";for(n.style.display="none",e(48).appendChild(n),n.src="javascript:",t=n.contentWindow.document,t.open(),t.write(o+"script"+u+"document.F=Object"+o+"/script"+u),t.close(),a=t.F;r--;)delete a[c][i[r]];return a()};t.exports=Object.create||function(t,n){var e;return null!==t?(f[c]=r(t),e=new f,f[c]=null,e[u]=t):e=a(),void 0===n?e:o(e,n)}},function(t,n,e){var r=e(35),o=e(16).concat("length","prototype");n.f=Object.getOwnPropertyNames||function(t){return r(t,o)}},function(t,n){n.f=Object.getOwnPropertySymbols},function(t,n,e){var r=e(2),o=e(3),i=e(45)(!1),u=e(21)("IE_PROTO");t.exports=function(t,n){var e,f=o(t),c=0,a=[];for(e in f)e!=u&&r(f,e)&&a.push(e);for(;n.length>c;)r(f,e=n[c++])&&(~i(a,e)||a.push(e));return a}},function(t,n,e){t.exports=e(5)},function(t,n,e){var r=e(15);t.exports=function(t){return Object(r(t))}},function(t,n,e){t.exports={default:e(41),__esModule:!0}},function(t,n,e){t.exports={default:e(42),__esModule:!0}},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(39),i=r(o),u=e(38),f=r(u),c="function"==typeof f.default&&"symbol"==typeof i.default?function(t){return typeof t}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":typeof t};n.default="function"==typeof f.default&&"symbol"===c(i.default)?function(t){return"undefined"==typeof t?"undefined":c(t)}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":"undefined"==typeof t?"undefined":c(t)}},function(t,n,e){e(65),e(63),e(66),e(67),t.exports=e(14).Symbol},function(t,n,e){e(64),e(68),t.exports=e(26).f("iterator")},function(t,n){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,n){t.exports=function(){}},function(t,n,e){var r=e(3),o=e(61),i=e(60);t.exports=function(t){return function(n,e,u){var f,c=r(n),a=o(c.length),s=i(u,a);if(t&&e!=e){for(;a>s;)if(f=c[s++],f!=f)return!0}else for(;a>s;s++)if((t||s in c)&&c[s]===e)return t||s||0;return!t&&-1}}},function(t,n,e){var r=e(43);t.exports=function(t,n,e){if(r(t),void 0===n)return t;switch(e){case 1:return function(e){return t.call(n,e)};case 2:return function(e,r){return t.call(n,e,r)};case 3:return function(e,r,o){return t.call(n,e,r,o)}}return function(){return t.apply(n,arguments)}}},function(t,n,e){var r=e(9),o=e(34),i=e(19);t.exports=function(t){var n=r(t),e=o.f;if(e)for(var u,f=e(t),c=i.f,a=0;f.length>a;)c.call(t,u=f[a++])&&n.push(u);return n}},function(t,n,e){t.exports=e(1).document&&document.documentElement},function(t,n,e){var r=e(28);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?t.split(""):Object(t)}},function(t,n,e){var r=e(28);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,n,e){"use strict";var r=e(32),o=e(12),i=e(20),u={};e(5)(u,e(7)("iterator"),function(){return this}),t.exports=function(t,n,e){t.prototype=r(u,{next:o(1,e)}),i(t,n+" Iterator")}},function(t,n){t.exports=function(t,n){return{value:n,done:!!t}}},function(t,n,e){var r=e(9),o=e(3);t.exports=function(t,n){for(var e,i=o(t),u=r(i),f=u.length,c=0;f>c;)if(i[e=u[c++]]===n)return e}},function(t,n,e){var r=e(13)("meta"),o=e(11),i=e(2),u=e(6).f,f=0,c=Object.isExtensible||function(){return!0},a=!e(8)(function(){return c(Object.preventExtensions({}))}),s=function(t){u(t,r,{value:{i:"O"+ ++f,w:{}}})},l=function(t,n){if(!o(t))return"symbol"==typeof t?t:("string"==typeof t?"S":"P")+t;if(!i(t,r)){if(!c(t))return"F";if(!n)return"E";s(t)}return t[r].i},p=function(t,n){if(!i(t,r)){if(!c(t))return!0;if(!n)return!1;s(t)}return t[r].w},d=function(t){return a&&v.NEED&&c(t)&&!i(t,r)&&s(t),t},v=t.exports={KEY:r,NEED:!1,fastKey:l,getWeak:p,onFreeze:d}},function(t,n,e){var r=e(6),o=e(10),i=e(9);t.exports=e(4)?Object.defineProperties:function(t,n){o(t);for(var e,u=i(n),f=u.length,c=0;f>c;)r.f(t,e=u[c++],n[e]);return t}},function(t,n,e){var r=e(19),o=e(12),i=e(3),u=e(24),f=e(2),c=e(30),a=Object.getOwnPropertyDescriptor;n.f=e(4)?a:function(t,n){if(t=i(t),n=u(n,!0),c)try{return a(t,n)}catch(t){}if(f(t,n))return o(!r.f.call(t,n),t[n])}},function(t,n,e){var r=e(3),o=e(33).f,i={}.toString,u="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],f=function(t){try{return o(t)}catch(t){return u.slice()}};t.exports.f=function(t){return u&&"[object Window]"==i.call(t)?f(t):o(r(t))}},function(t,n,e){var r=e(2),o=e(37),i=e(21)("IE_PROTO"),u=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=o(t),r(t,i)?t[i]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?u:null}},function(t,n,e){var r=e(23),o=e(15);t.exports=function(t){return function(n,e){var i,u,f=String(o(n)),c=r(e),a=f.length;return c<0||c>=a?t?"":void 0:(i=f.charCodeAt(c),i<55296||i>56319||c+1===a||(u=f.charCodeAt(c+1))<56320||u>57343?t?f.charAt(c):i:t?f.slice(c,c+2):(i-55296<<10)+(u-56320)+65536)}}},function(t,n,e){var r=e(23),o=Math.max,i=Math.min;t.exports=function(t,n){return t=r(t),t<0?o(t+n,0):i(t,n)}},function(t,n,e){var r=e(23),o=Math.min;t.exports=function(t){return t>0?o(r(t),9007199254740991):0}},function(t,n,e){"use strict";var r=e(44),o=e(52),i=e(17),u=e(3);t.exports=e(31)(Array,"Array",function(t,n){this._t=u(t),this._i=0,this._k=n},function(){var t=this._t,n=this._k,e=this._i++;return!t||e>=t.length?(this._t=void 0,o(1)):"keys"==n?o(0,e):"values"==n?o(0,t[e]):o(0,[e,t[e]])},"values"),i.Arguments=i.Array,r("keys"),r("values"),r("entries")},function(t,n){},function(t,n,e){"use strict";var r=e(59)(!0);e(31)(String,"String",function(t){this._t=String(t),this._i=0},function(){var t,n=this._t,e=this._i;return e>=n.length?{value:void 0,done:!0}:(t=r(n,e),this._i+=t.length,{value:t,done:!1})})},function(t,n,e){"use strict";var r=e(1),o=e(2),i=e(4),u=e(27),f=e(36),c=e(54).KEY,a=e(8),s=e(22),l=e(20),p=e(13),d=e(7),v=e(26),y=e(25),h=e(53),b=e(47),x=e(50),m=e(10),g=e(3),w=e(24),O=e(12),S=e(32),_=e(57),j=e(56),P=e(6),E=e(9),M=j.f,A=P.f,T=_.f,L=r.Symbol,N=r.JSON,C=N&&N.stringify,k="prototype",F=d("_hidden"),q=d("toPrimitive"),I={}.propertyIsEnumerable,B=s("symbol-registry"),D=s("symbols"),W=s("op-symbols"),H=Object[k],K="function"==typeof L,R=r.QObject,J=!R||!R[k]||!R[k].findChild,U=i&&a(function(){return 7!=S(A({},"a",{get:function(){return A(this,"a",{value:7}).a}})).a})?function(t,n,e){var r=M(H,n);r&&delete H[n],A(t,n,e),r&&t!==H&&A(H,n,r)}:A,G=function(t){var n=D[t]=S(L[k]);return n._k=t,n},$=K&&"symbol"==typeof L.iterator?function(t){return"symbol"==typeof t}:function(t){return t instanceof L},z=function(t,n,e){return t===H&&z(W,n,e),m(t),n=w(n,!0),m(e),o(D,n)?(e.enumerable?(o(t,F)&&t[F][n]&&(t[F][n]=!1),e=S(e,{enumerable:O(0,!1)})):(o(t,F)||A(t,F,O(1,{})),t[F][n]=!0),U(t,n,e)):A(t,n,e)},Y=function(t,n){m(t);for(var e,r=b(n=g(n)),o=0,i=r.length;i>o;)z(t,e=r[o++],n[e]);return t},Q=function(t,n){return void 0===n?S(t):Y(S(t),n)},X=function(t){var n=I.call(this,t=w(t,!0));return!(this===H&&o(D,t)&&!o(W,t))&&(!(n||!o(this,t)||!o(D,t)||o(this,F)&&this[F][t])||n)},V=function(t,n){if(t=g(t),n=w(n,!0),t!==H||!o(D,n)||o(W,n)){var e=M(t,n);return!e||!o(D,n)||o(t,F)&&t[F][n]||(e.enumerable=!0),e}},Z=function(t){for(var n,e=T(g(t)),r=[],i=0;e.length>i;)o(D,n=e[i++])||n==F||n==c||r.push(n);return r},tt=function(t){for(var n,e=t===H,r=T(e?W:g(t)),i=[],u=0;r.length>u;)!o(D,n=r[u++])||e&&!o(H,n)||i.push(D[n]);return i};K||(L=function(){if(this instanceof L)throw TypeError("Symbol is not a constructor!");var t=p(arguments.length>0?arguments[0]:void 0),n=function(e){this===H&&n.call(W,e),o(this,F)&&o(this[F],t)&&(this[F][t]=!1),U(this,t,O(1,e))};return i&&J&&U(H,t,{configurable:!0,set:n}),G(t)},f(L[k],"toString",function(){return this._k}),j.f=V,P.f=z,e(33).f=_.f=Z,e(19).f=X,e(34).f=tt,i&&!e(18)&&f(H,"propertyIsEnumerable",X,!0),v.f=function(t){return G(d(t))}),u(u.G+u.W+u.F*!K,{Symbol:L});for(var nt="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),et=0;nt.length>et;)d(nt[et++]);for(var nt=E(d.store),et=0;nt.length>et;)y(nt[et++]);u(u.S+u.F*!K,"Symbol",{for:function(t){return o(B,t+="")?B[t]:B[t]=L(t)},keyFor:function(t){if($(t))return h(B,t);throw TypeError(t+" is not a symbol!")},useSetter:function(){J=!0},useSimple:function(){J=!1}}),u(u.S+u.F*!K,"Object",{create:Q,defineProperty:z,defineProperties:Y,getOwnPropertyDescriptor:V,getOwnPropertyNames:Z,getOwnPropertySymbols:tt}),N&&u(u.S+u.F*(!K||a(function(){var t=L();return"[null]"!=C([t])||"{}"!=C({a:t})||"{}"!=C(Object(t))})),"JSON",{stringify:function(t){if(void 0!==t&&!$(t)){for(var n,e,r=[t],o=1;arguments.length>o;)r.push(arguments[o++]);return n=r[1],"function"==typeof n&&(e=n),!e&&x(n)||(n=function(t,n){if(e&&(n=e.call(this,t,n)),!$(n))return n}),r[1]=n,C.apply(N,r)}}}),L[k][q]||e(5)(L[k],q,L[k].valueOf),l(L,"Symbol"),l(Math,"Math",!0),l(r.JSON,"JSON",!0)},function(t,n,e){e(25)("asyncIterator")},function(t,n,e){e(25)("observable")},function(t,n,e){e(62);for(var r=e(1),o=e(5),i=e(17),u=e(7)("toStringTag"),f=["NodeList","DOMTokenList","MediaList","StyleSheetList","CSSRuleList"],c=0;c<5;c++){var a=f[c],s=r[a],l=s&&s.prototype;l&&!l[u]&&o(l,u,a),i[a]=i.Array}},function(t,n){"use strict";var e={versions:function(){var t=window.navigator.userAgent;return{trident:t.indexOf("Trident")>-1,presto:t.indexOf("Presto")>-1,webKit:t.indexOf("AppleWebKit")>-1,gecko:t.indexOf("Gecko")>-1&&t.indexOf("KHTML")==-1,mobile:!!t.match(/AppleWebKit.*Mobile.*/),ios:!!t.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),android:t.indexOf("Android")>-1||t.indexOf("Linux")>-1,iPhone:t.indexOf("iPhone")>-1||t.indexOf("Mac")>-1,iPad:t.indexOf("iPad")>-1,webApp:t.indexOf("Safari")==-1,weixin:t.indexOf("MicroMessenger")==-1}}()};t.exports=e},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}var o=e(40),i=r(o),u=function(){function t(t,n,e){return n||e?String.fromCharCode(n||e):o[t]||t}function n(t){return l[t]}var e=/&quot;|&lt;|&gt;|&amp;|&nbsp;|&apos;|&#(\d+);|&#(\d+)/g,r=/['<> "&]/g,o={"&quot;":'"',"&lt;":"<","&gt;":">","&amp;":"&","&nbsp;":" "},f=/\u00a0/g,c=/<br\s*\/?>/gi,a=/\r?\n/g,s=/\s/g,l={};for(var p in o)l[o[p]]=p;return o["&apos;"]="'",l["'"]="&#39;",{encode:function(t){return t?(""+t).replace(r,n).replace(a,"<br/>").replace(s,"&nbsp;"):""},decode:function(n){return n?(""+n).replace(c,"\n").replace(e,t).replace(f," "):""},encodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},encodeBase16forJSON:function(t){if(!t)return t;t=t.replace(/[\u4E00-\u9FBF]/gi,function(t){return escape(t).replace("%u","\\u")});for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},decodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e+=2)n.push(String.fromCharCode("0x"+t.slice(e,e+2)));return n.join("")},encodeObject:function(t){if(t instanceof Array)for(var n=0,e=t.length;e>n;n++)t[n]=u.encodeObject(t[n]);else if("object"==("undefined"==typeof t?"undefined":(0,i.default)(t)))for(var r in t)t[r]=u.encodeObject(t[r]);else if("string"==typeof t)return u.encode(t);return t},loadScript:function(t){var n=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(n),n.setAttribute("src",t)},addLoadEvent:function(t){var n=window.onload;"function"!=typeof window.onload?window.onload=t:window.onload=function(){n(),t()}}}}();t.exports=u},function(t,n){function e(t,n){t.classList?t.classList.add(n):t.className+=" "+n}t.exports=e},function(t,n){function e(t,n){if(t.classList)t.classList.remove(n);else{var e=new RegExp("(^|\\b)"+n.split(" ").join("|")+"(\\b|$)","gi");t.className=t.className.replace(e," ")}}t.exports=e},,,function(t,n){"use strict";function e(){var t=document.querySelector("#page-nav");if(t&&!document.querySelector("#page-nav .extend.prev")&&(t.innerHTML='<a class="extend prev disabled" rel="prev">&laquo; Prev</a>'+t.innerHTML),t&&!document.querySelector("#page-nav .extend.next")&&(t.innerHTML=t.innerHTML+'<a class="extend next disabled" rel="next">Next &raquo;</a>'),yiliaConfig&&yiliaConfig.open_in_new){var n=document.querySelectorAll(".article-entry a:not(.article-more-a)");n.forEach(function(t){t.setAttribute("target","_blank")})}var e=document.querySelector("#js-aboutme");e&&0!==e.length&&(e.innerHTML=e.innerText)}t.exports={init:e}},,,,,,,,,function(t,n){function e(t,n){if("string"==typeof n)return t.insertAdjacentHTML("afterend",n);var e=t.nextSibling;return e?t.parentNode.insertBefore(n,e):t.parentNode.appendChild(n)}t.exports=e}])</script><script src="/./main.2d7529.js"></script><script>!function(){var e=function(e){var t=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(t),t.setAttribute("src",e)};e("/slider.885efe.js")}()</script>
 
 
+    
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
+  <div class="tools-nav header-menu">
+    
+    
+      
+      
+      
+    
+    
 
+    <ul style="width: 70%">
+    
+    
+      
+      <li style="width: 100%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      
+        
+    </ul>
+  </div>
+  <div class="tools-wrap">
+    
 
+    
 
-
-
-
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">FE learner&lt;br&gt;YouZan</div>
+  	  	
+    	</section>
+    
+  </div>
   
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
 
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
 
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
 
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
 
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+            <div class="pswp__top-bar">
 
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+                <!--  Controls are self-explanatory. Order can be changed. -->
 
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+                <div class="pswp__counter"></div>
 
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
 
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 
-  
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
 
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
 
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
 
-  
-  
+        </div>
 
-  
+    </div>
 
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-
+</div>
+  </div>
 </body>
 </html>
