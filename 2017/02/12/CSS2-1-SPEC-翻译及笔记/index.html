@@ -13,7 +13,11 @@
 语法与基本数据类型值
 整数和实数，长度，百分比，url和uri，计数器，颜色，字符串（’\A’换行）。
 em相对字体大小。
-子元素一般继承computed value（除了数值）。">
+子元素一般继承computed value（除了数值）。
+
+选择器伪元素和伪类选择器
+匿名盒不在文档树中，计算子集时不加入考虑。
+:first-line伪元素只能出现在block container element，可能出现在相">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS2.1 SPEC 翻译及笔记">
 <meta property="og:url" content="http://yoursite.com/2017/02/12/CSS2-1-SPEC-翻译及笔记/index.html">
@@ -23,8 +27,12 @@ em相对字体大小。
 语法与基本数据类型值
 整数和实数，长度，百分比，url和uri，计数器，颜色，字符串（’\A’换行）。
 em相对字体大小。
-子元素一般继承computed value（除了数值）。">
-<meta property="og:updated_time" content="2017-02-12T15:00:31.000Z">
+子元素一般继承computed value（除了数值）。
+
+选择器伪元素和伪类选择器
+匿名盒不在文档树中，计算子集时不加入考虑。
+:first-line伪元素只能出现在block container element，可能出现在相">
+<meta property="og:updated_time" content="2017-03-12T03:10:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS2.1 SPEC 翻译及笔记">
 <meta name="twitter:description" content="对css2.1 spec翻译理解的笔记整理
@@ -32,7 +40,11 @@ em相对字体大小。
 语法与基本数据类型值
 整数和实数，长度，百分比，url和uri，计数器，颜色，字符串（’\A’换行）。
 em相对字体大小。
-子元素一般继承computed value（除了数值）。">
+子元素一般继承computed value（除了数值）。
+
+选择器伪元素和伪类选择器
+匿名盒不在文档树中，计算子集时不加入考虑。
+:first-line伪元素只能出现在block container element，可能出现在相">
   
     <link rel="alternative" href="/atom.xml" title="everywill" type="application/atom+xml">
   
@@ -188,7 +200,6 @@ em相对字体大小。
 <li>em相对字体大小。</li>
 <li>子元素一般继承computed value（除了数值）。</li>
 </ol>
-<a id="more"></a>
 <h1 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h1><h3 id="伪元素和伪类选择器"><a href="#伪元素和伪类选择器" class="headerlink" title="伪元素和伪类选择器"></a>伪元素和伪类选择器</h3><ol>
 <li>匿名盒不在文档树中，计算子集时不加入考虑。</li>
 <li>:first-line伪元素只能出现在block container element，可能出现在相同flow（没有被定位且不float）的block-level后代中，但不能在table-cell或inline-block的后代中。</li>
@@ -303,7 +314,7 @@ em相对字体大小。
 <li>否则，display计算值采用指定值。</li>
 </ol>
 <h3 id="Layered-presentation"><a href="#Layered-presentation" class="headerlink" title="Layered presentation"></a>Layered presentation</h3><ol>
-<li>z-index: 应用于positioned元素，指定了在当前stacking context中的stack level；指定该box是否建立一个stacking context。</li>
+<li>z-index: 应用于positioned元素，指定了在当前stacking context中的stack level；指定该box是否建立一个stacking context，除了auto以外的值将建立新的stacking context，auto值只能为根元素建立stacking context。</li>
 <li>每个盒都属于一个stacking context。给定stacking context中每个positioned盒都有一个整型堆叠层级，表示它在同一堆叠上下文中相对于其它堆叠层级的Z轴上的位置。堆叠层级更大的总被格式化在堆叠层级低的前面，盒可以有负的堆叠层级。同一个堆叠上下文中堆叠层级相同的盒按照文档树顺序从后向前堆叠。每个stacling context是atomic的。</li>
 <li>root元素形成root stacking coontext。其它stacking context由任意’z-index’的计算值不为’auto’的positioned元素生成。</li>
 <li>绘制顺序：生成stacking context元素的background和border；stacking level为负数的子级stacking context（最负的优先）；in-flow，none-inline，non-positioned后代；non-positioned的浮动（元素）；in-flow，inline，non-positioned的后代，包括inline table和inline block；stacking level为0的子级stacking context，以及stacking level为0的positioned的后代；stacking level为正数的子级stacking context（最小的优先）。</li>
@@ -416,7 +427,7 @@ em相对字体大小。
 <li>将如下影响height的used value：计算暂定的应用高度（不考虑min-height和max-height）遵循上面“计算height与margin”中的规则，如果这个暂定高度大于max-height，就再应用一遍上面的规则，这次把max-height的值作为height的计算值，如果产生的高度小于min-height，就再应用一遍上面的规则，但这次把min-height的值作为height的计算值。</li>
 </ol>
 <h3 id="计算行高：line-hight和vertical-align"><a href="#计算行高：line-hight和vertical-align" class="headerlink" title="计算行高：line-hight和vertical-align"></a>计算行高：line-hight和vertical-align</h3><ol>
-<li>一个line box的高度决定如下：对每个元素计算高度，replaced, inline-block和inline-table元素来说，是margin box的高度，对inline box来说是它们的line-hight；行盒高度是最高的盒的top与最低的盒的bottom之间的距离（包括下面’line-height’中解释的strut）</li>
+<li>一个line box的高度决定如下：对每个元素计算高度，replaced, inline-block和inline-table元素来说，是margin box的高度，对inline box来说是它们的line-height（但line-height对inline box的padding margin的边界无关，也即不影响box的视觉高度）；行盒高度是最高的盒的top与最低的盒的bottom之间的距离（包括下面’line-height’中解释的strut）</li>
 <li>leading和half leading：任何字体存在height A和depth D，UA把non-replaced的inline box中按baseline对齐，不含任何font就认为还有一个宽度为0的strut，具有第一个可用字体的A和D；分别在A和D上加half leading（leading可以为负）。</li>
 <li></li>
 </ol>
@@ -428,7 +439,7 @@ em相对字体大小。
 </ol>
 <h1 id="Generated-content-automatic-numbering-and-lists"><a href="#Generated-content-automatic-numbering-and-lists" class="headerlink" title="Generated content, automatic numbering, and lists"></a>Generated content, automatic numbering, and lists</h1><p>自动生成内容，有时希望不是来自document tree，来自和before和after伪元素一起使用的content以及display为list-item的元素。</p>
 <h3 id="before和-after伪元素"><a href="#before和-after伪元素" class="headerlink" title=":before和:after伪元素"></a>:before和:after伪元素</h3><ol>
-<li>元素生成的box包含:before和:after伪元素的内容，伪元素将从此元素继承任何能够继承的属性，不继承的属性取initial value。</li>
+<li>元素生成的box包含:before和:after伪元素的内容，伪元素将从此元素继承任何能够继承的属性，不继承的属性取initial value；replaced element内的:before和:after伪元素未定义，可能生成也可能不生成。</li>
 </ol>
 <h3 id="content属性"><a href="#content属性" class="headerlink" title="content属性"></a>content属性</h3><ol>
 <li>应用于:before和:after伪元素，属性值none不生成伪元素，属性值normal的compouted value对于:before和:after均为none；其他属性值有<string>, <uri>, <strong>attr</strong>。</uri></string></li>
@@ -456,7 +467,7 @@ em相对字体大小。
 <li>background-image：当image可用时，将在color上层；百分比形式的内在尺寸必须根据为background-position属性建立坐标系的矩形的尺寸来解析；如果具有一个内在宽度或者内在高度和内在比例，那么缺少的尺寸就根据给定的尺寸和比例来计算；如果图片具有一个内在宽度或者内在高度但没有内在宽高比，那么缺少的尺寸被假设为给background-position属性建立坐标系的矩形的尺寸；如果图片没有内在尺寸但具有一个内在比例，就把尺寸假定为不超出给background-position属性建立坐标系的矩形中满足该比例的最大尺寸；如果图片没有内在比例，那么就把尺寸假定为给background-position属性建立坐标系的矩形。</li>
 <li>background-repeat：initial value为repeat，当指定了image时，将使其铺满content，padding和border。</li>
 <li>background-position：initial value为0%，0%；如果只指定一个值，第二个值为center；根元素和body元素上的background虽然传递到了canvas但是定位仍然好像只是针对该元素一样；百分比根据padding box。</li>
-<li>background-attachment：当指定了image时，该属性指定了它应该相对viewport固定（fixed）还是随containing block滚动（scroll）。</li>
+<li>background-attachment：当指定了image时，该属性指定了它应该相对viewport固定（fixed）还是随containing block滚动（scroll），默认为scroll。</li>
 <li>background：简写属性，先将属性设为初始值，再用显式值覆盖。</li>
 </ol>
 <h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><h3 id="font-family"><a href="#font-family" class="headerlink" title="font-family"></a>font-family</h3><p>分隔使用逗号，表示alternative。</p>
@@ -622,6 +633,20 @@ em相对字体大小。
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/03/12/css-secret-阅读笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          css secret 阅读笔记
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 
 
