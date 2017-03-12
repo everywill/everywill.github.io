@@ -32,7 +32,7 @@ em相对字体大小。
 选择器伪元素和伪类选择器
 匿名盒不在文档树中，计算子集时不加入考虑。
 :first-line伪元素只能出现在block container element，可能出现在相">
-<meta property="og:updated_time" content="2017-03-12T03:10:24.000Z">
+<meta property="og:updated_time" content="2017-03-12T03:15:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS2.1 SPEC 翻译及笔记">
 <meta name="twitter:description" content="对css2.1 spec翻译理解的笔记整理
@@ -205,6 +205,7 @@ em相对字体大小。
 <li>:first-line伪元素只能出现在block container element，可能出现在相同flow（没有被定位且不float）的block-level后代中，但不能在table-cell或inline-block的后代中。</li>
 <li>:first-letter应用于block container element，可应用于同一个flow中含有文本的后代，但不能在table-cell或inline-block的后代中（必须出现在first formatted line），计算时包括:before和:after在内的文本。</li>
 </ol>
+<a id="more"></a>
 <h1 id="属性赋值，层叠和继承"><a href="#属性赋值，层叠和继承" class="headerlink" title="属性赋值，层叠和继承"></a>属性赋值，层叠和继承</h1><h3 id="specified-computed-and-actual-values"><a href="#specified-computed-and-actual-values" class="headerlink" title="specified, computed and actual values"></a>specified, computed and actual values</h3><ol>
 <li>specified value指定的先后顺序：如果层叠产生一个值，就使用它；否则，如果属性是继承的并且元素不是文档的根，使用父元素的computed value；否则使用初始值。</li>
 <li>computed value和used value都做绝对化的工作，computed value计算时不需要渲染文档， used value计算时需要文档已布局。</li>
